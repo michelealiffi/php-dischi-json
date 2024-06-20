@@ -3,7 +3,7 @@ const { createApp } = Vue
 createApp ({
     data() {
         return {
-            logo: "../src/assets/img/Spotify_logo_without_text.svg.png",
+            logo: "./assets/img/Spotify_logo_without_text.svg.png",
             disks: null,
         }
     },
@@ -15,7 +15,7 @@ createApp ({
     },
     mounted() {
         axios
-            .get('../src/server.php')
+            .get('http://localhost:8888/php-dischi-json/src/server.php')
             .then(response => {
                 console.log(response);
                 this.disks = response.data

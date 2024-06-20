@@ -13,7 +13,9 @@
 <body>
     <div id="app">
         <header class="p-3 text-white d-flex align-items-center">
-            <h1 class="ms-5">{{ logo }}</h1>
+            <div class="row w-25">
+                <img src="./src/assets/img/Spotify_logo_without_text.svg.png" class="ms-5 w-25">
+            </div>
         </header>
         <main>
             <div class="container">
@@ -32,14 +34,16 @@
             </div>
         </main>
     </div>
+
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- Vue -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    </script>
     <!-- Axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- Js -->
-    <script type="text" src="/src/main.js"></script>
+    <script src="./src/main.js"></script>
 </body>
 
 </html>
